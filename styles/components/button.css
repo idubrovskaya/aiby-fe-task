@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-black-button);
+  text-decoration: none;
+  padding: 16px 0;
+  background-color: var(--color-white);
+  border-radius: 100px;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* iPhone SE / 8 / 8+  */
+@media screen and (max-height: 736px) {
+  .btn {
+    margin-top: 8px;
+  }
+}
+
+/* iPhone X, 12 */
+@media screen and (min-height: 812px) and (max-height: 844px) {
+  .btn {
+    margin-top: 16px;
+  }
+}

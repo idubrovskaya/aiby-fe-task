@@ -1,0 +1,154 @@
+.tariff {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tariff-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-tariff);
+  backdrop-filter: blur(10.87px);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 5px 56px 5px 24px;
+  min-height: 56px;
+  position: relative;
+}
+
+/* --- ACTIVE STATE --- */
+
+.tariff-btn--active {
+  background-color: var(--color-tariff-active);
+  border: 1px solid var(--color-white);
+}
+.tariff-btn--active .tariff-badge {
+  background-color: var(--color-white);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.tariff-btn--active .tariff-badge::before {
+  opacity: 0;
+}
+
+.tariff-btn--active .tariff-badge__text {
+  color: var(--color-black-cell);
+}
+
+.tariff-btn--active .tariff-badge__text::before {
+  opacity: 1;
+}
+
+.tariff-btn--active .tariff-badge__left-line,
+.tariff-btn--active .tariff-badge__right-line {
+  opacity: 0;
+}
+
+/* --- TEXTS --- */
+
+.tariff-btn__period {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.tariff-btn__price,
+.tariff-btn__yearly-price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  display: block;
+  color: var(--color-white);
+  opacity: 0.7;
+}
+
+/* header with badge */
+.tariff-btn__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: 24px;
+  height: 20px;
+  border-radius: 16px;
+  transition: background-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.tariff-badge__text {
+  position: relative;
+  z-index: 100;
+  padding-inline: 21px;
+  border-radius: 16px;
+  background-image: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: var(--font3);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.tariff-badge__text::before {
+  z-index: -100;
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background-color: var(--color-white);
+  content: "";
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.tariff-badge__left-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 128px;
+  height: 1px;
+  transform: translateX(-100%);
+  background-image: linear-gradient(108.44deg, transparent 25%, #fd94f4 75.58%);
+  transition: opacity 0.1s ease;
+}
+
+.tariff-badge__right-line {
+  z-index: -100;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(100%);
+  transition: opacity 0.1s ease;
+}
+
+html[lang="de"] .tariff-btn__period,
+html[lang="de"] .tariff-btn__price,
+html[lang="de"] .tariff-btn__yearly-price {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+html[lang="pt"] .tariff-btn__period,
+html[lang="pt"] .tariff-btn__price,
+html[lang="pt"] .tariff-btn__yearly-price {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+html[lang="fr"] .tariff-btn__period,
+html[lang="fr"] .tariff-btn__price,
+html[lang="fr"] .tariff-btn__yearly-price {
+  font-size: 14px;
+  line-height: 17px;
+}

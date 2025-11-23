@@ -1,0 +1,12 @@
+:root {
+  --font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  --second-family: "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  --third-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font3: "Roboto", sans-serif;
+
+  --color-white: #fff;
+  --color-black-button: #070b33;
+  --color-black-cell: #141131;
+  --color-tariff: rgba(255, 255, 255, 0.1);
+  --color-tariff-active: rgba(255, 255, 255, 0.3);
+}

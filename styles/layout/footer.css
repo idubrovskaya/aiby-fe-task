@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.3;
+}
+
+.footer a {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-white);
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+html[lang="fr"] .footer a {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+html[lang="pt"] .footer a {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+html[lang="de"] .footer a {
+  font-size: 9px;
+  line-height: 13px;
+}
+
+html[lang="es"] .footer a {
+  font-size: 11px;
+  line-height: 13px;
+}

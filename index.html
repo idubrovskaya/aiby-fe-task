@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>AIBY Test Task</title>
+
+    <meta name="description" content="AIBY test task (FE developer)" />
+  </head>
+  <body>
+    <main class="main-content">
+      <a href="#" class="close-btn" aria-label="Close banner">
+        <img src="./assets/icons/close.svg" alt="close banner" />
+      </a>
+      <h1 class="title" data-i18n="Get Unlimited <br>Access">
+        Get Unlimited <br />Access
+      </h1>
+
+      <section class="features">
+        <div class="features__list">
+          <div class="feature-card">
+            <div class="feature-card__image-wrapper">
+              <img
+                class="feature-card__image"
+                src="./assets/images/feature-1.png"
+                srcset="
+                  ./assets/images/feature-1.png    1x,
+                  ./assets/images/feature-1@2x.png 2x,
+                  ./assets/images/feature-1@3x.png 3x
+                "
+                alt=""
+                loading="lazy"
+              />
+              <p
+                class="feature-card__text"
+                data-i18n="Unlimited Art <br>Creation"
+              >
+                Unlimited Art<br />Creation
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__image-wrapper">
+              <img
+                class="feature-card__image"
+                src="./assets/images/feature-2.png"
+                srcset="
+                  ./assets/images/feature-2.png    1x,
+                  ./assets/images/feature-2@2x.png 2x,
+                  ./assets/images/feature-2@3x.png 3x
+                "
+                alt=""
+                loading="lazy"
+              />
+              <p class="feature-card__text" data-i18n="Exclusive <br>Styles">
+                Exclusive<br />Styles
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__image-wrapper">
+              <img
+                class="feature-card__image"
+                src="./assets/images/feature-3.png"
+                srcset="
+                  ./assets/images/feature-3.png    1x,
+                  ./assets/images/feature-3@2x.png 2x,
+                  ./assets/images/feature-3@3x.png 3x
+                "
+                alt=""
+                loading="lazy"
+              />
+              <p
+                class="feature-card__text"
+                data-i18n="Magic Avatars <br>With 20% Off"
+              >
+                Magic Avatars<br />With 20% Off
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tariffs -->
+
+      <section class="tariff">
+        <!-- YEARLY -->
+        <div class="tariff-btn">
+          <div class="tariff-btn__header">
+            <span class="tariff-btn__period" data-i18n="YEARLY ACCESS"
+              >YEARLY ACCESS</span
+            >
+
+            <span
+              class="tariff-btn__yearly-price"
+              data-i18n="Just {{price}} per year"
+              data-price="$39.99"
+            >
+              Just $39.99 per year
+            </span>
+
+            <div class="tariff-btn__badge">
+              <span class="tariff-badge">
+                <span class="tariff-badge__text" data-i18n="BEST OFFER">
+                  BEST OFFER
+                </span>
+                <span class="tariff-badge__left-line"></span>
+                <span class="tariff-badge__right-line">
+                  <svg
+                    width="26"
+                    height="29"
+                    viewBox="0 0 26 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.5619 28.2795C24.5619 14.0009 13.874 2.2185 0.0618591 0.496155"
+                      stroke="url(#paint0_linear_1_752)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1_752"
+                        x1="-15.2343"
+                        y1="13.1774"
+                        x2="10.5619"
+                        y2="41.1774"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#01B4FF" offset="0%" />
+                        <stop
+                          offset="1"
+                          stop-color="#01B4FF"
+                          stop-opacity="0.01"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="tariff-btn__prices">
+            <span
+              class="tariff-btn__price"
+              data-i18n="{{price}} <br>per week"
+              data-price="$0.48"
+            >
+              $0.48<br />per week
+            </span>
+          </div>
+        </div>
+
+        <!-- WEEKLY (active by default) -->
+        <div class="tariff-btn tariff-btn--active">
+          <span class="tariff-btn__period" data-i18n="WEEKLY ACCESS"
+            >WEEKLY ACCESS</span
+          >
+
+          <span
+            class="tariff-btn__price"
+            data-i18n="{{price}} <br>per week"
+            data-price="$6.99"
+          >
+            $6.99<br />per week
+          </span>
+        </div>
+      </section>
+
+      <!-- Button -->
+      <a
+        class="btn"
+        href="https://google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="Continue"
+      >
+        Continue
+      </a>
+    </main>
+
+    <!-- Footer links -->
+    <footer class="footer">
+      <a href="https://apple.com/" data-i18n="Terms of Use">Terms of Use</a>
+      <a href="https://google.com/" data-i18n="Privacy Policy"
+        >Privacy Policy</a
+      >
+      <a href="https://apple.com/" data-i18n="Restore">Restore</a>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

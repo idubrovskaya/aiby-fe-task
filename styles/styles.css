@@ -1,0 +1,12 @@
+@import "./base/fonts.css";
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/typography.css";
+
+@import "./layout/footer.css";
+@import "./layout/main.css";
+
+@import "./components/title.css";
+@import "./components/button.css";
+@import "./components/tariff.css";
+@import "./components/features.css";
