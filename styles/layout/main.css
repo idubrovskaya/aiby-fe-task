@@ -6,12 +6,16 @@ body {
   justify-content: space-between;
   padding: 10px 24px;
 
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
   /* Body background styles */
 
   background-image: image-set(
-    url("../../assets/images/bg.png") 1x,
-    url("../../assets/images/bg@2x.png") 2x,
-    url("../../assets/images/bg@3x.png") 3x
+    url("../../assets/images/bg.webp") 1x,
+    url("../../assets/images/bg@2x.webp") 2x,
+    url("../../assets/images/bg@3x.webp") 3x
   );
 
   background-size: cover;

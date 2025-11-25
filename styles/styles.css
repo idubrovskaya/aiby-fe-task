@@ -1,7 +1,5 @@
-@import "./base/fonts.css";
 @import "./base/reset.css";
 @import "./base/variables.css";
-@import "./base/typography.css";
 
 @import "./layout/footer.css";
 @import "./layout/main.css";
