@@ -2,17 +2,7 @@ html {
   height: 100%;
   overflow: hidden;
   overscroll-behavior: none;
-
-  background-image: image-set(
-    url("../../assets/images/bg.webp") 1x,
-    url("../../assets/images/bg@2x.webp") 2x,
-    url("../../assets/images/bg@3x.webp") 3x
-  );
-  background-color: var(--color-black-cell);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
+  background: var(--color-black-cell);
   padding: 0;
   margin: 0;
 }
@@ -30,9 +20,16 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
 
-  background: transparent;
-
-  /* padding-top: env(safe-area-inset-top, 0px); */
+  background-image: image-set(
+    url("../../assets/images/bg.webp") 1x,
+    url("../../assets/images/bg@2x.webp") 2x,
+    url("../../assets/images/bg@3x.webp") 3x
+  );
+  background-color: var(--color-black-cell);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .main-content {
