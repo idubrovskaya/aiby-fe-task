@@ -38,12 +38,10 @@ body {
 }
 
 .close-btn {
-  /* position: absolute;
-  top: 5%;
-  left: 0; */
   position: absolute;
-  top: calc(10px + env(safe-area-inset-top, 0px)); /* учитываем чёлку */
+  /* top: calc(10px + env(safe-area-inset-top, 0px));  */
   left: 24px;
+  top: 5%;
   z-index: 10;
 }
 

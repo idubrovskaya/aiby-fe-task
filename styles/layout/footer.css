@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: space-between;
   opacity: 0.3;
+
+  padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  margin-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .footer a {
@@ -39,4 +42,11 @@ html[lang="de"] .footer a {
 html[lang="es"] .footer a {
   font-size: 11px;
   line-height: 13px;
+}
+
+/* iPhone SE / 8 / 8+ */
+@media screen and (max-height: 736px) {
+  .footer {
+    padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  }
 }

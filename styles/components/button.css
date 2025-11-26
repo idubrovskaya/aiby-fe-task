@@ -11,6 +11,8 @@
   padding: 16px 0;
   background-color: var(--color-white);
   border-radius: 100px;
+
+  margin-top: max(16px, env(safe-area-inset-top, 16px));
 }
 
 .btn:active {
@@ -21,7 +23,7 @@
 /* iPhone SE / 8 / 8+  */
 @media screen and (max-height: 736px) {
   .btn {
-    margin-top: 8px;
+    margin-top: max(8px, env(safe-area-inset-top, 8px));
   }
 }
 
