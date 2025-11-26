@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .feature-card {
@@ -37,37 +38,18 @@
   width: 100%;
 }
 
-@media (max-width: 375px) and (max-height: 736px) {
-  .features {
-    padding: 25px 0;
-    transform: none;
-  }
-  .features__list {
-    gap: 5px;
-  }
-}
-
-@media (min-width: 414px) and (max-height: 736px) {
+@media screen and (max-height: 700px) {
   .features {
     padding: 20px 0;
   }
   .features__list {
-    gap: 7px;
-  }
-}
-
-@media (max-width: 375px) and (min-height: 737px) {
-  .features {
-    padding: 30px 0;
-  }
-  .features__list {
     gap: 5px;
   }
 }
 
-@media (min-width: 376px) and (max-width: 390px) and (min-height: 737px) {
+@media screen and (min-height: 701px) and (max-height: 850px) {
   .features {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .features__list {
     gap: 8px;

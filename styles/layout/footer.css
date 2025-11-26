@@ -41,9 +41,3 @@ html[lang="es"] .footer a {
   font-size: 11px;
   line-height: 13px;
 }
-
-@supports (padding: max(0px)) {
-  .footer {
-    padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
-  }
-}
