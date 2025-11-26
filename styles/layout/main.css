@@ -14,18 +14,23 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   font-family: "SF Pro Display", system-ui, sans-serif;
 }
 
 .main-content {
-  flex: 1 1 auto;
+  flex: 1;
   width: 100%;
   padding: 0 24px 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
 }
 
 .close-btn {

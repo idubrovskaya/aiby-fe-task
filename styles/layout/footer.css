@@ -1,13 +1,12 @@
 .footer {
   display: flex;
   width: 100%;
-  padding: 0 20px 10px 20px;
+  padding: 10px 44px;
   gap: 24px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   opacity: 0.3;
-  margin-top: auto;
 }
 
 .footer a {
