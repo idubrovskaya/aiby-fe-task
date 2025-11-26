@@ -84,28 +84,44 @@
   right: 24px;
   height: 20px;
   border-radius: 16px;
+  padding: 1.1px;
   transition: background-color 0.1s ease, box-shadow 0.1s ease;
 }
 
+.tariff-badge::before {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    270deg,
+    #00b5ff 0%,
+    #632af7 53.01%,
+    #ff96f4 100%
+  );
+  content: "";
+  transition: opacity 0.1s ease;
+}
+
 .tariff-badge__text {
-  position: relative;
   z-index: 100;
   padding-inline: 21px;
   border-radius: 16px;
   background-image: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+  font-family: var(--font2);
   font-weight: 700;
   font-size: 13px;
-  font-family: var(--font2);
+  line-height: 17px;
   text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
+  transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 .tariff-badge__text::before {
+  border-radius: 16px;
   z-index: -100;
   position: absolute;
   inset: 0;
-  border-radius: 16px;
   background-color: var(--color-white);
   content: "";
   opacity: 0;
