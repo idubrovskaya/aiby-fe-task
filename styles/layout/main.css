@@ -1,16 +1,15 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-
+  justify-content: space-between;
   background-image: image-set(
     url("../../assets/images/bg.webp") 1x,
     url("../../assets/images/bg@2x.webp") 2x,
     url("../../assets/images/bg@3x.webp") 3x
   );
 
-  background-color: var(--color-black-cell);
+  background-color: var(--color-black-button);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -24,13 +23,12 @@ body {
 }
 
 .main-content {
-  flex: 1;
-  width: 100%;
-  padding: 0 24px 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: relative;
+  flex: 1;
+  width: 100%;
+  padding: 0 24px 24px;
 }
 
 .close-btn {
