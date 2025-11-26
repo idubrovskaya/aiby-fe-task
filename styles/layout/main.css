@@ -1,38 +1,31 @@
 body {
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  align-items: center;
 
   background-image: image-set(
     url("../../assets/images/bg.webp") 1x,
     url("../../assets/images/bg@2x.webp") 2x,
     url("../../assets/images/bg@3x.webp") 3x
   );
-  background-color: var(--color-black-cell);
 
+  background-color: var(--color-black-cell);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
+
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  font-family: "SF Pro Display", system-ui, sans-serif;
 }
 
 .main-content {
-  flex: 1;
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 0 24px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
-  padding: 0px 24px 25px 24px;
-  width: 100%;
-  position: relative;
 }
 
 .close-btn {
