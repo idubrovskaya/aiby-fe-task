@@ -8,8 +8,7 @@ html {
 }
 
 body {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100dvh;
   height: 100svh;
   display: flex;
   flex-direction: column;
@@ -40,8 +39,6 @@ body {
   padding: 0px 24px 25px 24px;
   width: 100%;
   position: relative;
-
-  padding-bottom: calc(80px + env(safe-area-inset-bottom));
 }
 
 .close-btn {

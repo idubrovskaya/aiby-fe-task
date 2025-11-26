@@ -1,16 +1,11 @@
 .footer {
-  position: fixed;
-  bottom: calc(env(safe-area-inset-bottom) + 12px);
-  left: 0;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-
-  padding: 0 20px 10px;
+  padding: 0 50px 10px;
   opacity: 0.3;
   background: transparent;
 }
