@@ -10,3 +10,11 @@ a {
   -webkit-appearance: none;
   cursor: pointer;
 }
+
+html,
+body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  height: 100%;
+  min-height: 100%;
+}

@@ -1,13 +1,12 @@
 .footer {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
   gap: 24px;
   flex-wrap: wrap;
-  padding: 0 50px 10px;
+  align-items: center;
+  justify-content: space-between;
   opacity: 0.3;
-  background: transparent;
 }
 
 .footer a {
@@ -40,18 +39,4 @@ html[lang="de"] .footer a {
 html[lang="es"] .footer a {
   font-size: 11px;
   line-height: 13px;
-}
-
-/* ВРЕМЕННО ДЛЯ ДЕБАГА */
-body {
-  border: 5px solid red !important;
-}
-
-.main-content {
-  border: 5px solid green !important;
-}
-
-.footer {
-  border: 5px solid blue !important;
-  background: rgba(0, 0, 255, 0.5) !important;
 }
