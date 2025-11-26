@@ -66,16 +66,3 @@ body {
     background-position: center top;
   }
 }
-
-/* test */
-html {
-  border: 2px solid red; /* Увидите границы html */
-}
-
-body {
-  border: 2px solid blue; /* Увидите границы body */
-}
-
-.footer {
-  background: rgba(0, 255, 0, 0.3); /* Увидите футер */
-}
