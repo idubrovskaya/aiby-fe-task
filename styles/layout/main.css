@@ -52,14 +52,14 @@ body {
 
 /* iPhone SE / 8 / 8+  */
 @media screen and (max-height: 736px) {
-  html {
+  body {
     background-position: center -30px;
   }
 }
 
 /* iPhone X */
 @media screen and (min-height: 812px) and (max-height: 830px) {
-  html {
+  body {
     background-position: center top;
   }
 }
