@@ -20,8 +20,6 @@ body {
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-
   background-image: image-set(
     url("../../assets/images/bg.webp") 1x,
     url("../../assets/images/bg@2x.webp") 2x,
