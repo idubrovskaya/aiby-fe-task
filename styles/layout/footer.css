@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   width: 100%;
-  /* padding: 10px 44px; */
+  padding: 10px 44px;
   gap: 24px;
   flex-wrap: wrap;
   align-items: center;
