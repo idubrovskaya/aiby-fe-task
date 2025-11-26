@@ -1,5 +1,8 @@
 html {
   height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+
   background-image: image-set(
     url("../../assets/images/bg.webp") 1x,
     url("../../assets/images/bg@2x.webp") 2x,
@@ -62,4 +65,17 @@ body {
   html {
     background-position: center top;
   }
+}
+
+/* test */
+html {
+  border: 2px solid red; /* Увидите границы html */
+}
+
+body {
+  border: 2px solid blue; /* Увидите границы body */
+}
+
+.footer {
+  background: rgba(0, 255, 0, 0.3); /* Увидите футер */
 }
