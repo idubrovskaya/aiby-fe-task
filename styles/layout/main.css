@@ -8,7 +8,9 @@ html {
 }
 
 body {
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +31,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .main-content {
