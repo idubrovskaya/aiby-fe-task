@@ -1,3 +1,17 @@
+html {
+  height: 100%;
+  background-image: image-set(
+    url("../../assets/images/bg.webp") 1x,
+    url("../../assets/images/bg@2x.webp") 2x,
+    url("../../assets/images/bg@3x.webp") 3x
+  );
+  background-color: var(--color-black-cell);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
 body {
   min-height: 100dvh;
   display: flex;
@@ -11,19 +25,10 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
 
-  background-image: image-set(
-    url("../../assets/images/bg.webp") 1x,
-    url("../../assets/images/bg@2x.webp") 2x,
-    url("../../assets/images/bg@3x.webp") 3x
-  );
-  background-color: var(--color-black-cell);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
+  background: transparent;
 
   padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .main-content {
@@ -47,14 +52,14 @@ body {
 
 /* iPhone SE / 8 / 8+  */
 @media screen and (max-height: 736px) {
-  body {
+  html {
     background-position: center -30px;
   }
 }
 
 /* iPhone X */
 @media screen and (min-height: 812px) and (max-height: 830px) {
-  body {
+  html {
     background-position: center top;
   }
 }
