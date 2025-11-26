@@ -10,6 +10,8 @@ html {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -28,7 +30,6 @@ body {
   background: transparent;
 
   padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .main-content {
