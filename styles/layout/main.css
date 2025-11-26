@@ -23,6 +23,7 @@ body {
   background-position: center top;
   background-attachment: fixed;
 }
+
 .main-content {
   flex: 1;
   display: flex;
