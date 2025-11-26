@@ -31,7 +31,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  /* background-attachment: fixed; */
 }
 
 .main-content {
@@ -43,6 +42,8 @@ body {
   padding: 0px 24px 25px 24px;
   width: 100%;
   position: relative;
+
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
 }
 
 .close-btn {
