@@ -41,3 +41,21 @@ html[lang="es"] .footer a {
   font-size: 11px;
   line-height: 13px;
 }
+
+/* ВРЕМЕННО ДЛЯ ДЕБАГА */
+body {
+  border: 5px solid red !important;
+}
+
+.main-content {
+  border: 5px solid green !important;
+}
+
+.footer {
+  border: 5px solid blue !important;
+  background: rgba(0, 0, 255, 0.5) !important;
+}
+
+html {
+  background: yellow !important; /* Увидите если есть зазор */
+}
